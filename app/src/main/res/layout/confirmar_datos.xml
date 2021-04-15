@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ConfirmarDatos">
+
+    <LinearLayout
+        android:id="@+id/datosLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="80dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/titulo2"
+            android:textSize="30dp"
+            />
+        <TextView
+            android:id="@+id/mNombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/pnombre"
+            android:textSize="25dp"
+            android:layout_marginTop="10dp"
+
+            />
+        <TextView
+            android:id="@+id/mFecha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/pfecha"
+            android:textSize="25dp"
+            android:layout_marginTop="10dp"
+            />
+        <TextView
+            android:id="@+id/mTelefono"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/telefono"
+            android:textSize="25dp"
+            android:layout_marginTop="10dp"
+            />
+        <TextView
+            android:id="@+id/mCorreo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/email"
+            android:textSize="25dp"
+            android:layout_marginTop="10dp"
+            />
+        <TextView
+            android:id="@+id/mDescrip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/descripcion"
+            android:textSize="25dp"
+            android:layout_marginTop="10dp"
+            />
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/botonRegresar"
+            android:textStyle="bold"
+            android:layout_marginTop="30dp"
+            android:onClick="editarDatos"
+            />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
